@@ -1,0 +1,8 @@
+{
+  "name": "Multiples",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "330c25e8"
+}
