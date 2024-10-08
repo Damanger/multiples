@@ -1,17 +1,51 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+<<<<<<< HEAD
     <ion-title>
       Tab 1
     </ion-title>
+=======
+    <ion-title>Múltiplos</ion-title>
+>>>>>>> fa5be0e (actualizando la obtención de los múltiplos y subirlo a firebase)
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Múltiplos</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Múltiplos de 3, 5 y 7</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Se calcularán los múltiplos de 3, 5 y 7 del número ingresado.
+      <ion-item>
+        <ion-input [(ngModel)]="numero" label="Ingrese un número" labelPlacement="floating" type="number" placeholder="100"></ion-input>
+      </ion-item>
+      
+      <ion-button expand="block" (click)="calcularMultiplos()">Calcular Múltiplos</ion-button>
+      <ion-button expand="block" (click)="guardarHistorial()">Guardar</ion-button>
+
+    </ion-card-content>
+  </ion-card>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Número ingresado: {{ numero }}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Resultado:</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>{{ secuencia }}</ion-label>
+    </ion-item>
+    <ion-item *ngFor="let res of resultado">
+      <ion-label [ngStyle]="{'color': res.color}" class="lista">{{ res.valor }} [{{ res.base }}] ({{ res.multiplos.join(', ') }})</ion-label>
+    </ion-item>    
+  </ion-list>
 </ion-content>

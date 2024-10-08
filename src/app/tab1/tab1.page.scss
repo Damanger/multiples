@@ -1,0 +1,50 @@
+ion-title{
+    color: #9efff0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem auto;
+}
+
+ion-card {
+    background: rgba(255, 255, 255, 0.1);
+    color: #9efff0;
+    border: 1px solid #9efff0;
+    border-radius: 25px;
+}
+
+ion-card-title {
+    color: #52ffe4;
+}
+
+ion-card-subtitle {
+    color: #d1fff8;
+}
+
+.button{
+    display: flex;
+    margin: 0.5rem auto; 
+    width: fit-content;
+    color: white;
+    font-weight: bolder;
+}
+
+ion-list{
+    background: rgba(255, 255, 255, 0.1);
+    color: #9efff0;
+    border: 1px solid #9efff0;
+    border-radius: 25px;
+    width: 50%;
+    margin: 0.5rem auto;
+    height: 20rem;
+    overflow-y: auto;
+}
+
+.lista{
+    background-color: rgba(200, 200, 200, 0.75);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border-radius: 25px;
+    border: 1px solid white;
+    padding: 0.5rem;
+}
